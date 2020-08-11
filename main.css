@@ -11,7 +11,6 @@ body
 {
     width: 1100px;
     background-color: #2ebf79;
-    min-height: 1335px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,6 +22,8 @@ body
     background-image: url(img/blue.jpg);
     border-top: 5px solid #2ebf79;
     font-family: 'Pacifico', cursive;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .notify
@@ -127,12 +128,14 @@ a:hover
     background-color:#1dae68;
 }
 
-.get
+.contact-form
 {
     width:1100px;
     height: 320px;
     background-color: #dddddd; 
 }
+
+/* nie styluj po id, lepiej uzyc klasy*/
 
 #contact
 {
@@ -149,6 +152,7 @@ a:hover
     padding-left: 20px;
 }
 
+/* styl na html*/
 input[type="text"]
 {
     width: 190px;
@@ -161,6 +165,7 @@ input[type="text"]
     border: none;
 }
 
+/* styl na html*/
 input[type="submit"]
 {
     width: 126px;
@@ -197,9 +202,6 @@ video
     margin-top: 2px;
 }
 
-
-
-
 .social
 {
     width:1100px;
@@ -211,14 +213,13 @@ video
     text-align: center;  
 }
 
-.social p
-{
-   color: #0e0e0e;
-   font-size: 13px;
-   font-weight: 700;
+.social-title {
+    color: #0e0e0e;
+    font-size: 13px;
+    font-weight: 700;
 }
 
-.pics
+.social-pics
 {
     width: 722px;
     height: 40px;
@@ -231,29 +232,28 @@ video
 
 
 
-.image
+.social-image
 {
     width: 36px;
     height: 40px;
     object-fit: cover;
     margin-right: 2px;
     float: left;
-    
 }
 
-.image:hover
+.social-image:hover
 {
     opacity: 0.8;
     cursor: pointer;
 }
 
-h2
+.social-description
 {
 font-size: 20px;
 color: black;
 }
     
-.ringlogo
+.social-logos
 {
     width: 245px;
     background-color:none;
@@ -263,7 +263,7 @@ color: black;
     margin-top: 20px;
 }
 
-.ring
+.social-logo
 {
     width: 36px;
     height: 25px;
@@ -276,13 +276,10 @@ color: black;
     color: white;
 }
 
-
-
-.ring:hover
+.social-logo:hover
 {
     background-color:#2ebf79;
 }
-
 
 
 .footer
@@ -292,9 +289,22 @@ color: black;
     background-color: #cdcdcd;
     padding-top: 45px;
     padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.data
+.footer-link
+{
+    float: left;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    color: #555555;
+    text-align: center;
+    margin-right: 30px;
+   text-decoration: none;
+}
+
+.footer-links
 {
     width: 525px;
     height: 20px;
@@ -304,16 +314,6 @@ color: black;
     padding-left: 30px;  
 }
 
-.word
-{
-    float: left;
-    font-size: 14px;
-    font-family: 'Work Sans', sans-serif;
-    color: #555555;
-    text-align: center;
-    margin-right: 30px;
-   
-}
 
 .word:hover
 {
@@ -329,6 +329,7 @@ color: black;
     margin-top: 17px;
 }
 
+/* to powinno byc dodane na kazdy link oddzielnie, nie poleca sie stylować po elementach html */
 a:link
 {
     color: #555555;
