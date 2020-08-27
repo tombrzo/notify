@@ -7,7 +7,6 @@ body
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-
 .container
 {
     max-width:1100px;
@@ -15,91 +14,85 @@ body
     margin-left: auto;
     margin-right: auto;
 }
-
 .header
 {
     max-width: 1100px;
     min-height: 350px;
     background-image: url(img/blue.jpg);
+    background-color: yellow;
     border-top: 5px solid #2ebf79;
     font-family: 'Pacifico', cursive;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
-
 .notify
 {
     font-size: 25px;
-    margin-left: 150px;
-    margin-top: 80px; 
+    margin-left: 200px;
     margin-bottom: 20px;
     color:white;
 }
-
 span
 {
     color: #2ebf79;
 }
-
 .showcase
 {
     max-width: 320px;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 150px;
+    margin-left: 200px;
     margin-bottom: 10px;
     color: black;
 }
-
 .circles
 {
     max-width: 150px;
-    margin-left: 150px;
-    padding: 0;
+    margin-left: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .circlebest
 {
     width: 36px;
     height: 34px;
     background-color: #1dae68;
-    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 50%;
     text-align: center;
     padding-top: 2px;
     color: white;
 }
-
 .circlebest:hover
 {
     background-color:#2ebf79;
 }
-
 .content
 {
     max-width: 1100px;
-    min-height:200px;
+    min-height: 220px;
     background-color: #f7f7f7;
     font-family: 'Work Sans', sans-serif;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
 }
-
 .box
 {
     max-width: 255px;
-    min-height: 200px;
+    min-height: 170px;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
     color: #303030;
-    margin: 5px;
-    
 }
 .theme
 {
@@ -114,58 +107,47 @@ span
     border-radius: 50%;
     color: white;
 }
-
 .theme:hover
 {
     cursor: pointer;
     color: white;
     background-color:#1dae68;
 }
-
 .contact-form
 {
     max-width:1100px;
-    min-height: 320px;
+    min-height: 290px;
     background-color: #dddddd; 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
-
+    padding-left: 80px;
+    padding-right: 80px;
 }
-
-/* nie styluj po id, lepiej uzyc klasy--- to zmieniłem*/
-
 .contact
 {
-    max-width: 360px;
-    min-height: 320px;
-    margin-left: 100px;
-    margin-right: 10px;
+    width: 390px;
+    min-height: 200px;
     text-align: left;
     font-family: 'Work Sans', sans-serif;
     font-size: 12px;
     color: #202020;
-    padding-left: 20px;
+    margin-top: 30px;
 }
-
-/* styl na html*/
-input[type="text"]
+.email
 {
     width: 190px;
     height: 32px;
-    border:1px solid gray;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
     padding-left: 15px;
     outline: none;
     border: none;
 }
-
-/* styl na html*/
-input[type="submit"]
+.submit
 {
     width: 126px;
     height: 34px;
@@ -177,39 +159,26 @@ input[type="submit"]
     letter-spacing: 1px;
     outline: none;
 }
-
-input[type="submit"]:hover
+.submit:hover
 {
     cursor: pointer;
     background-color: #1dae68;
 }
-
-.media
+.media video
 {
-    max-width: 380px;
-    min-height: 285px;
-    margin-left: 110px;
-}
-
-
-
-video
-{
-    max-width: 380px;
-    min-height: 260px;
+    max-width: 370px;
+    max-height: 200px;
     outline: none;
-    margin-top: 20px;
+    border-radius: 10px;
 }
-
 .social
 {
     max-width:1100px;
-    min-height: 360px;
+    min-height: 340px;
     background-color:#f7f7f7;
     font-family: 'Work Sans', sans-serif;
     font-size: 13px;
     color: #555555;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     display: flex; 
@@ -217,58 +186,43 @@ video
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
-
 .social-title {
     color: #0e0e0e;
     font-size: 13px;
     font-weight: 700;
 }
-
 .social-pics
 {
     max-width: 1100px;
-    min-height: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     display: flex; 
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
-
-
-
 .social-image
 {
     width: 36px;
     height: 40px;
     object-fit: cover;
     margin-right: 1px;
-    margin-left: auto;
-
+    border: none;
 }
-
 .social-image:hover
 {
     opacity: 0.8;
     cursor: pointer;
 }
-
 .social-description
 {
 font-size: 20px;
 color: black;
 }
-    
 .social-logos
 {
-    width: 245px;
-    background-color:none;
+    width: 265px;
     height: 36px;
     margin-left: auto;
     margin-right: auto;
@@ -276,41 +230,34 @@ color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
-
 .social-logo
 {
     width: 36px;
     height: 25px;
-    margin-left: 4px;
+    margin-left: 8px;
     border-radius: 50%;
     text-align: center;
     padding-top: 9px;
     background-color: #cdcdcd;
     color: white;
 }
-
 .social-logo:hover
 {
     background-color:#2ebf79;
 }
-
 .footer
 {
     max-width: 1100px;
     min-height: 55px;
     background-color: #cdcdcd;
-    padding-top: 0px;
-    padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .footer-links
 {
     max-width: 580px;
@@ -322,59 +269,67 @@ color: black;
     justify-content: center;
     align-items: center;
 }
-
 .footer-link
 {
     font-size: 14px;
     font-family: 'Work Sans', sans-serif;
     margin-right: 15px;
     margin-left: 15px;
-    text-decoration: none;  
-}
-.footer-link:hover
-{
-    font-weight: bold;
+    text-decoration: none; 
 }
 
-
-/* to powinno byc dodane na kazdy link oddzielnie, nie poleca sie stylować po elementach html */
-a:link
+.footer-links a:link
 {
     color:black;
 }
-a:visited
+.footer-links a:visited
 {
-    color: black;
+    color:black;
 }
-a:active
+.footer-links a:hover
 {
-    color: black;
+    font-weight: bold;
+}
+.footer-links a:active
+{
+    color:black;
 }
 
 
-@media (min-width:360px) and (max-width:425px)
+
+@media (min-width:320px) and (max-width:425px)
 {
     .header
     {
         background-image: url(img/mountain.jpg) ;
+        max-width: 1100px;
+        min-height: 150px;
+        justify-content: flex-start;
     }
     .notify
     {
-        margin-left: 50px;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    span
+    {
+        color: red;
     }
     .showcase
     {
-        margin-left: 50px;
+        margin-left: 20px;
         color: red;
+        font-size: 12px;
     }
     .circles
     {
-        margin-left: 50px;
-        margin-top: 30px;
+        margin-left: 20px;
+        margin-top: 5px;
     }
     .circlebest
     {
         background-color: darkgreen;
+        color: white;
     }
     .content
     {
@@ -387,40 +342,39 @@ a:active
     }
     .contact-form
     {
-        justify-content: flex-end;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .contact
     {
-       margin-left: 10px; 
-       padding-left: 0;
-       min-height: 280px;
+       padding-left: 20px;
+       padding-right: 20px;
+       max-height: 200px;
+       text-align: justify;
+       margin-top: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center
     }
-    input[type="text"]
+    .email
     {
-        max-width: 180px;
+        width: 150px;
     }
-    input[type="submit"]
+    .submit
     {
         background-color: darkgreen;
+        width: 100px;
     }
-    .media
+    .media video
     {
-        margin-left: 0;
-        min-height: 250px;
-    }
-    video
-    {
-        margin-left: auto;
-        width: 355px;
-        margin: 0;
-        
+        max-width: 320px;
     }
     .social
     {
-        background-color: darkgrey;
+        background-color: #cccccc;
+        padding-left: 10px;
     }
     .social-title
     {
@@ -433,28 +387,14 @@ a:active
     .social-logo
     {
         background-color: darkgreen;
+        margin-left: 4px;
+        margin-right: 4px;
     }
     .lorem
     {
         color: darkgreen;
+        padding-right: 10px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
    
 @media (min-width:426px) and (max-width:767px)
@@ -475,8 +415,7 @@ a:active
     }
     .circles
     {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 70px;
         margin-top: 30px;
     }
     .circlebest
@@ -494,37 +433,48 @@ a:active
         background-color: blue;
         color: yellow;
     }
+    .contact-form
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 430px;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .contact
     {
-        margin-left: auto;
-        margin-right: auto;
-        min-height: 250px;
+        max-width: 390px;
+        max-height: 200px;
+        margin-top: 0;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center
     }
-    
-    input[type="submit"]
+    .submit
     {
         background-color: blue;
         color: white;
-    }
-    .media
-    {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    video
-    {
-        max-width: 380px;
-        max-height: 260px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
     }
     .social
     {
         background-color:#909090;
     }
-
-
+    .lorem
+    {
+        text-align: center;
+    }
+    .lorem br
+    {
+        display: none;
+    }
+    .social
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .social-title
     {
         color: red;
@@ -540,17 +490,9 @@ a:active
     }
     .footer-links
     {
-      max-width: 580px;
+     line-height: 120%;
     }
-    
-
-
-
-  
-
 }
-
-   
 
 @media (min-width:768px) and (max-width:1024px)
 {
@@ -562,7 +504,6 @@ a:active
     {
         color: white;
     }
-
     .showcase
     {
         margin-left: 100px;
@@ -579,6 +520,8 @@ a:active
     .content
     {
         background-color: #cccccc;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .box
     {
@@ -592,28 +535,29 @@ a:active
     .contact-form
     {
         background-color: #aaaaaa;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 430px;
     }
     .contact
     {
-        margin-left: auto;
-        margin-right: auto;
+        max-height: 200px;
+        margin-top: 0;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
-    input[type="submit"]
+    .submit
     {
         color: yellow;
         background-color: rgb(47, 47, 180);
     }
     .media
     {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    video
-    {
-        max-width: 380px;
-        max-height: 260px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 0;
     }
     .social
     {
@@ -627,9 +571,10 @@ a:active
     {
         background-color: rgb(47, 47, 180);
     }
-    
-
-
+    .footer
+    {
+        background-color: #aaaaaa;
+    }
 }
 
    
